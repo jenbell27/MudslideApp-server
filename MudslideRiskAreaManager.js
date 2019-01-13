@@ -191,6 +191,9 @@ const MudslideRiskAreaFinder = function(){
                 });
 
                 resolve(allAddresses);
+            }).catch(error=>{
+                // console.error(error);
+                reject(error);
             });
         });
 

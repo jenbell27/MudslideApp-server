@@ -39,7 +39,7 @@ app.get('/queryAddressesInRiskAreas', function(req, res) {
             res.send(results);
         })
         .catch(error=>{
-            console.log(error);
+            res.send(error);
         });
 
     }
